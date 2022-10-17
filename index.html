@@ -11,7 +11,7 @@
 
 </head>
 <body>
-    <a-scene arjs='detectionMode: mono_and_matrix; matrixCodeType: 3x3;' cursor="rayOrigin: mouse">
+    <a-scene arjs='detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
         <a-assets>
             <a-asset-item
             id="buster_drone"
@@ -20,13 +20,13 @@
         </a-assets>
         <a-marker type='barcode' value='22'>
             <a-entity
-              position="0 1 0"
+              position="0 0 0"
               scale="2 2 2"
               gltf-model="#buster_drone"
               animation="property: rotation; to: 0 360 0; loop: true; dur: 10000">
             </a-entity>
         </a-marker>
-        <a-entity id="rig" position="25 10 0">
+        <a-entity id="rig" position="25 10 -50">
             <a-entity id="camera" camera look-controls wasd-controls></a-entity>
         </a-entity>
     </a-scene>
