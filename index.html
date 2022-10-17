@@ -16,19 +16,19 @@
         <a-assets>
             <a-asset-item
             id="object"
-            src="female_body.glb">
+            src="dolly.glb">
             </a-asset-item>
         </a-assets>
 
         <a-marker type='barcode' value='22'>
             <a-entity
               position="0 0 0"
-              scale="3 3 3"
+              scale="2 2 2"
               gltf-model="#object"
               animation="property: rotation; to: 0 360 0; loop: false; dur:15000">
             </a-entity>
         </a-marker>
-        <a-entity id="rig" position="0 0 0" wasd-controls laser-controls>
+        <a-entity id="rig" position="0 0 0" wasd-controls look-controls>
             <a-camera id="camera"></a-camera>
         </a-entity>
             
