@@ -12,12 +12,14 @@
 </head>
 <body>
     <a-scene arjs='detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
+
         <a-assets>
             <a-asset-item
             id="buster_drone"
             src="buster_drone.glb">
             </a-asset-item>
         </a-assets>
+
         <a-marker type='barcode' value='22'>
             <a-entity
               position="0 0 0"
@@ -26,7 +28,8 @@
               animation="property: rotation; to: 0 360 0; loop: true; dur: 10000">
             </a-entity>
         </a-marker>
-        <a-entity camera position="0 0 0" look-controls wasd-controls></a-entity>
+        
+        <a-entity camera position="0 0 0"></a-entity>
     </a-scene>
     
 </body>
