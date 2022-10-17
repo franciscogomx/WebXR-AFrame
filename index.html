@@ -25,13 +25,13 @@
               position="0 0 0"
               scale="2 2 2"
               gltf-model="#object"
-              animation="property: rotation; to: 0 360 0; loop: false; dur:15000">
+              animation=
+								"property: rotation; 
+								to: 0 360 0; 
+								easing: linear; 
+								loop: true; 
+								dur:2500">
             </a-entity>
-            <a-sphere
-							position="0 0 0"
-							radious="1"
-							color="blue">
-            </a-sphere>
         </a-marker>
         <a-entity id="rig" position="0 0 0" wasd-controls look-controls>
           <a-camera id="camera"></a-camera>
